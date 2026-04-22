@@ -28,6 +28,9 @@
                 <button id="reload-cache" class="btn btn-reload">
                     <i class="fas fa-database"></i> Reload
                 </button>
+                <button id="open-settings" class="btn btn-settings">
+                    <i class="fas fa-cog"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -77,6 +80,24 @@
             <p>&copy; 2026 Breaking News Aggregator. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- 設定視窗 -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>系統設定</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="gas-url">Google Apps Script 部署網址</label>
+                    <input type="text" id="gas-url" placeholder="https://script.google.com/macros/s/.../exec">
+                    <p class="help-text">請貼上您在 Google Apps Script 部署後的「網頁應用程式」網址。</p>
+                </div>
+                <button id="save-settings" class="btn btn-full">儲存並重新載入</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
