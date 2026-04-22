@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News | 國際新聞聚合</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="brand">
+                <i class="fas fa-bolt"></i>
+                <h1>Breaking News</h1>
+            </div>
+            <div class="timestamps">
+                <span>最後更新 <span id="last-updated">2026-04-21 14:00</span></span>
+                <span>最後同步 <span id="last-synced">2026-04-21 14:00</span></span>
+            </div>
+            <div class="controls">
+                <button id="quick-refresh" class="btn btn-quick">
+                    <i class="fas fa-bolt"></i> Quick
+                </button>
+                <button id="full-refresh" class="btn btn-full">
+                    <i class="fas fa-sync-alt"></i> Full
+                </button>
+                <button id="reload-cache" class="btn btn-reload">
+                    <i class="fas fa-database"></i> Reload
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 今日重點區 -->
+        <section id="highlights" class="section">
+            <h2 class="section-title">今日重點區</h2>
+            <div id="highlights-grid" class="highlights-grid">
+                <!-- Top 3 Headlines will be injected here -->
+            </div>
+        </section>
+
+        <!-- 延續議題區 -->
+        <section id="trending-topics" class="section">
+            <h2 class="section-title">延續議題</h2>
+            <div class="trending-container">
+                <div id="trend-sentence" class="trend-sentence">
+                    <!-- 7天趨勢句 -->
+                </div>
+                <div id="hashtags" class="hashtags">
+                    <!-- Theme tags -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 分類與列表區 -->
+        <section id="news-feed" class="section">
+            <div class="feed-header">
+                <div class="tabs">
+                    <button class="tab-btn active" data-category="all">全部</button>
+                    <button class="tab-btn" data-category="geo">🌍 Geo / 國際政治</button>
+                    <button class="tab-btn" data-category="economy">💰 Economy / 金融市場</button>
+                    <button class="tab-btn" data-category="conflict">⚔️ Conflict / 戰爭衝突</button>
+                    <button class="tab-btn" data-category="tech">🧠 Tech / AI / 科技</button>
+                    <button class="tab-btn" data-category="macro">📊 Macro / 全球趨勢</button>
+                </div>
+            </div>
+            <div id="news-grid" class="news-grid">
+                <!-- 17 news items will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Breaking News Aggregator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
