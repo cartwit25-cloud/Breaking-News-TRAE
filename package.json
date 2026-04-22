@@ -1,0 +1,19 @@
+{
+  "name": "breaking-news-aggregator",
+  "version": "1.0.0",
+  "description": "International News Aggregator with Notion-style UI - API-free version",
+  "main": "api/news.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "google-spreadsheet": "^4.1.1",
+    "google-auth-library": "^9.6.3",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
